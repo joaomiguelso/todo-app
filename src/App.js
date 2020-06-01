@@ -92,7 +92,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <img src={logo} className="logo" alt="logo" />
+        <img src={logo} className="yoda" alt="yoda" />
       </div>
       <form className="todo-list">
         <h1>Do or do not... There is no try.</h1>
