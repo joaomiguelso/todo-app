@@ -1,6 +1,6 @@
 body {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+    min-height: 100vh;
 }
 
 .app {
@@ -15,9 +15,10 @@ body {
 }
 
 .logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 20vmin;
   pointer-events: none;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .todo-list {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import logo from './yoda.png';
 import './App.css';
 
 const ENTER_KEY = 'Enter';
@@ -13,18 +13,22 @@ function App() {
    */
 
   const [todos, setTodos] = useState([
-    { 
-      content: 'Pickup dry cleaning',
+    {
+      content: 'Build a todo app in React',
       isCompleted: true,
+    },
+    {
+      content: 'Practice Guitar',
+      isCompleted: false,
     },
     {
       content: 'Get haircut',
       isCompleted: false,
     },
     {
-      content: 'Build a todo app in React',
+      content: 'Cycle',
       isCompleted: false,
-    }
+    },
   ]);
 
   /**
@@ -91,6 +95,8 @@ function App() {
         <img src={logo} className="logo" alt="logo" />
       </div>
       <form className="todo-list">
+        <h1>Do or do not... There is no try.</h1>
+        <h3> - Master Yoda</h3>
         <ul>
           {todos.map((todo, i) => (
             <div className={`todo ${todo.isCompleted && 'todo-is-completed'}`}>
